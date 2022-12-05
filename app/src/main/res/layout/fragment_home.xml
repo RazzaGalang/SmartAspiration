@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="75dp"
+            >
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ayo majukan sekolah!"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/dark"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semua aspirasimu kami hargai!"
+                android:fontFamily="@font/poppins_semibold"
+
+                android:layout_marginBottom="12dp"
+                android:textSize="16dp"
+                android:textColor="@color/dark"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAspirasi"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="24dp"
+                app:strokeColor="@color/dark"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/image"
+                        android:gravity="center|left"
+                        android:orientation="vertical"
+                        android:layout_alignParentStart="true"
+                        >
+
+                        <TextView
+                            android:id="@+id/textCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Apa itu \nAspirasi?"
+                            android:textColor="@color/dark"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/subtextCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center_vertical|left"
+                            android:text="Baca Disini!"
+                            android:textColor="@color/dark"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/imgcardmain"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/CardList"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                app:cardCornerRadius="24dp"-->
+<!--                app:strokeColor="@color/dark"-->
+<!--                app:strokeWidth="1dp">-->
+
+<!--                <ListView-->
+<!--                    android:id="@+id/ListView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="12dp"-->
+<!--                    tools:listitem="@layout/list_item"-->
+<!--                    >-->
+
+<!--                </ListView>-->
+
+
+
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/buttonPindahAspirasi"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="24dp"
+                android:backgroundTint="@color/dark"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berikan Aspirasi Sekarang!"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kolaborasi"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/dark"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="24dp"
+                app:strokeColor="@color/dark"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/kolaborasi"
+                        android:layout_marginRight="8dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MPK dan RPL"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/dark"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SMKN 1 Cimahi"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/dark"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

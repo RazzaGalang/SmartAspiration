@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundstroke"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".DeskripsiAspirasiAlert">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/white"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/dark"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Apa itu Aspirasi?"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="@color/dark"
+                        android:text="Menurut Kamus Besar Bahasa Indonesia (KBBI) aspirasi adalah “harapan tujuan untuk keberhasilan pada masa yang akan datang”. Selain itu aspirasi menurut Hurlock diartikan sebagai “keinginan yang sangat kuat yang ditandai dengan usaha untuk meraih suatu hal yang dipandang lebih tinggi dan lebih bernilai dari keadaan sekarang”. Dari kedua pendapat tersebut, dapat disimpulkan aspirasi adalah harapan atau keinginan yang kuat untuk meraih sesuatu perubahan yang lebih bernilai dari saat ini dan merujuk pada perubahan positif dimasa datang."
+                        android:justificationMode="inter_word"
+                        android:textSize="16dp"
+                        />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_margin="20dp"
+            android:id="@+id/btnKembali"
+            android:layout_width="300dp"
+            android:layout_height="62dp"
+            android:text="Kembali"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="false"
+            app:cornerRadius="20dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>
