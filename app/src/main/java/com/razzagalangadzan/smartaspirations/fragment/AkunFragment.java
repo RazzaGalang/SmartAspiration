@@ -78,7 +78,7 @@ public class AkunFragment extends Fragment {
 
             onDisplay.setText("Halo " + displayName);
         } else {
-            onDisplay.setText("ERROR");
+            onDisplay.setText("");
         }
 
         return root;
